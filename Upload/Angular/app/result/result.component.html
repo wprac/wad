@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Your Profile</h1>
+        <h3>First Name : {{fname}}</h3>
+        <h3>Email : {{email}}</h3>
+        <h3>Password : {{password}}</h3>
+        <div class="log">
+            <button class="center" href="" routerLink="/login" (click)="onlogout()">Logout</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

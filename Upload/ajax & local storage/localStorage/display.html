@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feddback - Form Data</title>
+
+    <style>
+        div {
+
+            width: 100%;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-color: rgb(170, 131, 3);
+            background-color: rgb(170, 131, 3);
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Feedback Data</h1>
+    <div class="container1">
+        <div>
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Message:</strong> <span id="message"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve form data from localStorage
+        const formData = JSON.parse(localStorage.getItem("formData"));
+
+        // Display form data on the page
+        document.getElementById("name").textContent = formData.myName;
+        document.getElementById("email").textContent = formData.myEmail;
+        document.getElementById("phone").textContent = formData.myPhone;
+        document.getElementById("message").textContent = formData.mesg;
+
+    </script>
+</body>
+
+</html>

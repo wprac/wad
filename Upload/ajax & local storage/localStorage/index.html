@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback form</title>
+</head>
+
+<body>
+    <div class="contact" id="ContactUs">
+        <h1>Feedback Form</h1>
+        <br>
+        <form action="#">
+            <div class="form-shape">
+
+                <div class="form-shape">
+                    <input type="text" name="myName" id="name" placeholder="Enter your Name" style="color: black">
+                </div>
+                <br>
+
+                <div class="form-shape">
+                    <input type="email" name="myEmail" id="email" placeholder="Enter your email" style="color: black">
+                </div>
+                <br>
+
+                <div class="form-shape">
+                    <input type="phone" name="myPhone" id="pho" placeholder="Enter your Phone no" style="color: black">
+                </div>
+                <br>
+
+                <label for="query">Branch</label>
+                <select class="text-danger" name="myQuery" id="query">
+
+                    <option value="sel" selected>
+                        Information Technology
+                    </option>
+                    <option value="Site">
+                        Computer Science
+                    </option>
+                    <option value="fed">
+                        Mechanical
+                    </option>
+                    <option value="others">
+                        Others
+                    </option>
+
+                </select>
+
+            </div>
+            <br>
+            <br>
+            
+            <div class="form-shape">
+                <label for="message">
+                    Any Feddback/message
+                </label>
+                <textarea name="mesg" id="message" cols="30" rows="5" style="color: black">
+                </textarea>
+            </div>
+            <br>
+            <input type="button" class="btn btn-success" value="Submit" onclick="saveFormData()">
+            <input type="button" class="btn btn-success" value="Reset">
+        </form>
+    </div>
+
+    <script>
+        function saveFormData() {
+            const formData = {
+                myName: document.getElementById("name").value,
+                myEmail: document.getElementById("email").value,
+                myPhone: document.getElementById("pho").value,
+                mesg: document.getElementById("message").value,
+            };
+
+            localStorage.setItem("formData", JSON.stringify(formData));
+
+            // Redirect to the display page
+            window.location.href = "display.html";
+        }
+
+    </script>
+</body>
+
+</html>

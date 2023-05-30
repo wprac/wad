@@ -1,0 +1,28 @@
+1) Install the node Js
+2) node --version
+3) Install the angular CLI
+    npm install -g @angular/cli
+4) ng version (chek the angular version)
+5) Install IDE VS Code
+6) ng new first-app  (create the app of name first-app)
+7) cd first-app
+8) ng serve (to run the application)
+
+
+app.module.ts 
+this file contain all component Names and permission to run the component.
+
+all components are added in the src/app/
+
+
+9)command to create the component
+    ng g c home 
+
+wehn we create Angular Component  4 files gets created
+
+1) home.component.html
+2) home.component.css
+3) home.component.spec.ts 
+4) home.component.ts
+
+<h2> {{myData}} </h2> <!-- Interpolating the data from the ts file to html file-->

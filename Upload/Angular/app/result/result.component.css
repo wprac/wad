@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: #58467b;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+.log {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-left: 30rem;
+}
+
+a {
+    color: rgb(118, 5, 103);
+    font-size: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    background-color: #555;
+  }
+  /* Center the button */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }

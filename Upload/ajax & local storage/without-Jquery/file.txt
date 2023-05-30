@@ -1,0 +1,2 @@
+Hello!!
+Welcome to the Magical World of JavaScript.
