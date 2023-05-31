@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filterable Table</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <input id="filterTable-input" data-type="search">
+    </form>
+
+    <table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
+        <thead>
+            <tr>
+                <th data-priority="1">Rank</th>
+                <th data-priority="persist">Country</th>
+                <th data-priority="2">Area sq.km.</th>
+                <th data-priority="3">Capital</th>
+                <th data-priority="4">Currency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Russia</td>
+                <td>17,075,200</td>
+                <td>Moscow</td>
+                <td>Russian ruble</td>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <td>Canada</td>
+                <td>9,984,670</td>
+                <td>Ottawa</td>
+                <td>Canadian dollar</td>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <td>United States of America</td>
+                <td>9,826,630</td>
+                <td>Washington, D.C.</td>
+                <td>US Dollar</td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td>China</td>
+                <td>9,596,960</td>
+                <td>Beijing</td>
+                <td>Renminbi</td>
+            </tr>
+
+            <tr>
+                <th>5</th>
+                <td>Brazil</td>
+                <td>8,511,965</td>
+                <td>Brasilia</td>
+                <td>Brazilian real</td>
+            </tr>
+
+            <tr>
+                <th>6</th>
+                <td>Australia</td>
+                <td>7,686,850</td>
+                <td>Canberra</td>
+                <td>Australian dollar</td>
+            </tr>
+
+            <tr>
+                <th>7</th>
+                <td>India</td>
+                <td>3,287,590</td>
+                <td>New Delhi</td>
+                <td>Indian Rupee</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

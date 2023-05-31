@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <style>
+        .cards
+        {
+            flex-wrap:wrap ;
+            padding: 20px;
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .card{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Shopping Card</h1>
+        </div>
+        
+        <div data-role="ui-content">
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Item1</h3>
+                    <button onclick="it1()">add</button>
+                </div>
+
+                <div class="card">
+                    <h3>Item2</h3>
+                    <button onclick="it2()">add</button>
+                </div>
+
+                <div class="card">
+                    <h3>Item3</h3>
+                    <button onclick="it3()">add</button>
+                </div>
+
+                <div class="card">
+                    <h3>Item4</h3>
+                    <button onclick="it4()">add</button>
+                </div>
+
+            </div>
+
+            <form>
+                <input id="filterTable-input" data-type="search">
+            </form>
+
+            <div class="viewCard">
+                <table id="data" data-filter="true" data-input="#filterTable-input">
+
+                </table>
+            </div>
+
+            <button onclick="vanished()">Clear cart</button>
+        </div>
+
+        <div data-role="footer">
+            <h1>&copy Copyright</h1>
+        </div>
+
+
+    </div>
+
+    <script>
+        let dis = "";
+        function it1()
+        {
+            dis += '<tr><td> item1</td> </tr>'  
+            document.getElementById("data").innerHTML = dis;
+        }
+        function it2()
+        {
+            dis += '<tr><td> item2</td> </tr>'  
+            document.getElementById("data").innerHTML = dis;
+        }
+        function it3()
+        {
+            dis += '<tr><td> item3</td> </tr>'  
+            document.getElementById("data").innerHTML = dis;
+        }
+        function it4()
+        {
+            dis += '<tr><td> item4</td> </tr>'  
+            document.getElementById("data").innerHTML = dis;
+        }
+
+
+        function vanished()
+        {
+            dis = " ";
+            document.getElementById("data").innerHTML = dis;
+        }
+    </script>
+</body>
+
+</html>
