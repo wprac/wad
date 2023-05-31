@@ -1,0 +1,17 @@
+git config --global user.name ""
+git config --global user.email ""
+git init
+git add demo.txt
+git status
+git commit -m "file added"
+git log
+git branch developer
+git branch
+git checkout developer
+git add develop.txt
+git commit -m "devloped added"
+git checkout master
+git merge developer
+git remote add origin "https://github.com/test.git"
+git remote -v
+git push -u origin master
